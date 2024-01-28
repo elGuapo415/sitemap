@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Pending Sites</title>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <!-- Latest compiled and minified CSS -->
+
+  <script defer src="https://kit.fontawesome.com/df21ef76d6.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!--TomTom-->
+  <script defer src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.1/maps/maps-web.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <script defer src="tomtommap.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#overlay" data-offset="25">
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <div class="titleContainer">
+          <div class="col-sm-14 p-3 title">
+            <h1 class="display-1" id="title">GK Pending Sites</h1>
+              <div class="col">
+                <div class="col-sm-3 p-3 complete" id="complete">
+                  <label for="date" id="dateLabel">
+                    Today's Date
+                    <input class="form-control form-control-sm" id="dateInput" type="text" name="incomplete" readonly>
+                  </label>
+                </div>
+                <div class="col-sm-3 p-3 incomplete" id="incomplete">
+                  <label for="complete" id="completeLabel">
+                    Site Complete
+                    <input class="form-control form-control-sm" id="completeInput" type="text" name="incomplete" readonly>
+                  </label>
+                </div>
+                <div class="col-sm-3 p-3 incomplete" id="incomplete">
+                  <label for="incomplete" id="incompleteLabel">
+                    Site Incomplete
+                    <input class="form-control form-control-sm" id="incompleteInput" type="text" name="incomplete" readonly>
+                  </label>
+                </div>
+                <div class="col-sm-3 p-3 incomplete" id="incomplete">
+                  <label for="batteryStock" id="batteryStockLabel">
+                    Battery Stock
+                    <input class="form-control form-control-sm" id="batteryStockInput" type="text" name="incomplete" readonly>
+                  </label>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div id='map' class='map'></div>
+      </div><!--end jumbotron-->
+    </div>
+  </div>
+</body>
+</html>
